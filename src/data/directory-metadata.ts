@@ -2,27 +2,43 @@ import { Directory, Type } from './directory-type';
 
 export const data: Directory[] = [
   {
-    name: 'One',
+    name: 'src',
     type: Type.folder,
     children: [
       {
-        name: 'One_One',
+        name: 'app',
         type: Type.folder,
         children: [
           {
-            name: 'One_One_One',
+            name: 'app.module.ts',
             type: Type.file,
           },
           {
-            name: 'One_One_Two',
+            name: 'app.component.ts',
+            type: Type.file,
+          },
+          {
+            name: 'app.component.html',
+            type: Type.file,
+          },
+          {
+            name: 'app.component.css',
+            type: Type.file,
+          },
+          {
+            name: 'preview',
             type: Type.folder,
             children: [
               {
-                name: 'One_One_Two_One',
+                name: 'preview.component.ts',
                 type: Type.file,
               },
               {
-                name: 'One_One_Two_Two',
+                name: 'preview.component.html',
+                type: Type.file,
+              },
+              {
+                name: 'preview.component.css',
                 type: Type.file,
               },
             ],
@@ -30,19 +46,33 @@ export const data: Directory[] = [
         ],
       },
       {
-        name: 'One_Two',
+        name: 'assets',
         type: Type.folder,
         children: [
           {
-            name: 'One_Two_One',
+            name: 'images',
             type: Type.folder,
             children: [
               {
-                name: 'One_Two_One_One',
+                name: 'user.png',
                 type: Type.file,
               },
               {
-                name: 'One_Two_One_Two',
+                name: 'banner.jpg',
+                type: Type.file,
+              },
+            ],
+          },
+          {
+            name: 'logo',
+            type: Type.folder,
+            children: [
+              {
+                name: 'main-logo.svg',
+                type: Type.file,
+              },
+              {
+                name: 'icon.png',
                 type: Type.file,
               },
             ],
@@ -50,15 +80,15 @@ export const data: Directory[] = [
         ],
       },
       {
-        name: 'One_Three',
+        name: 'services',
         type: Type.folder,
         children: [
           {
-            name: 'One_Three_One',
+            name: 'record.service.ts',
             type: Type.file,
           },
           {
-            name: 'One_Three_Two',
+            name: 'user.service.ts',
             type: Type.file,
           },
         ],
@@ -66,37 +96,37 @@ export const data: Directory[] = [
     ],
   },
   {
-    name: 'Two',
+    name: 'lib',
     type: Type.folder,
     children: [
       {
-        name: 'Two_One',
+        name: 'common',
         type: Type.folder,
         children: [
           {
-            name: 'Two_One_One',
+            name: 'src',
             type: Type.folder,
             children: [
               {
-                name: 'Two_One_One_One',
+                name: 'index.ts',
                 type: Type.file,
               },
             ],
           },
           {
-            name: 'Two_One_Two',
+            name: 'index.ts',
             type: Type.file,
           },
         ],
       },
       {
-        name: 'Two_Two',
+        name: 'package.json',
         type: Type.file,
       },
     ],
   },
   {
-    name: 'Three',
+    name: 'index.html',
     type: Type.file,
   },
 ];
